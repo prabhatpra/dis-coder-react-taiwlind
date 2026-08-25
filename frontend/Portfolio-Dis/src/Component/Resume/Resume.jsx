@@ -116,7 +116,16 @@ const Resume = () => {
           {ResumeData.projects.map((proj, i) => (
             <div key={i} className="mb-3">
               <h3 className="font-semibold text-sm dark:text-white">{proj.title}</h3>
-              <p className="text-xs dark:text-gray-300">{proj.tech}</p>
+              <p className="text-xs dark:text-gray-300">
+                <a
+                   href={proj.tech}
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   className="text-blue-600 hover:text-blue-800 underline text-sx"
+                   >
+                    View Project
+                    </a>
+                  </p>
               <ul className="list-disc ml-5 text-xs dark:text-gray-300">
                 {proj.details.map((d, idx) => (
                   <li key={idx}>{d}</li>
