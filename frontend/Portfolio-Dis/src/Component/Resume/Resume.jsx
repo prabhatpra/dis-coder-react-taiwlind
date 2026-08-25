@@ -38,8 +38,25 @@ const Resume = () => {
           <p className="text-sm dark:text-gray-300">Email: {ResumeData.contact.email}</p>
           <p className="text-sm dark:text-gray-300">Phone: {ResumeData.contact.phone}</p>
           <p className="text-sm dark:text-gray-300">Location: {ResumeData.contact.location}</p>
-          <p className="text-sm dark:text-gray-300">LinkedIn: {ResumeData.contact.linkedin}</p>
-          <p className="text-sm dark:text-gray-300">GitHub: {ResumeData.contact.github}</p>
+          <p className="text-sm dark:text-gray-300">LinkedIn:{" "}
+          <a
+             href={ResumeData.contact.linkedin}
+             target="_blank"
+             rel="noopener noreferrer"
+             className="text-blue-600 underline"
+             >
+              View Profile
+              </a>
+            </p>
+          <p className="text-sm dark:text-gray-300">GitHub:{" "}
+            <a
+               href={ResumeData.contact.github}
+               target="_blank"
+               rel="noopener noreferrer"
+               className="text-blue-600 underline">
+                View GitHub
+                </a>
+              </p>
         </section>
 
         {/* SKILLS */}

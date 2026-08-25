@@ -7,9 +7,9 @@ const ResumeData = {
   contact: {
     email: "prabhatprajapati01@gmail.com",
     phone: "+91 8409363297",
-    location: "Ranchi, India",
-    linkedin: "www.linkedin.com/in/prabhat-prajapati-01p6",
-    github: "github.com/prabhatpra"
+    location: "Ranchi Jharkhand, India",
+    linkedin: "https://www.linkedin.com/in/prabhat-prajapati-01p6/",
+    github: "https://github.com/prabhatpra"
   },
   workExperience: [
     {
