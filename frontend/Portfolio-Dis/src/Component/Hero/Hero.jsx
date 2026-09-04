@@ -22,11 +22,13 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5, ease: "easeOut" }}
       >
-        <HeroImg />
-
-        <div className="flex-1 flex flex-col justify-center md:justify-start md:ml-10 mt-6 md:mt-0 text-center md:text-left">
+      <div className="flex-1 flex flex-col justify-center md:justify-start mt-6 md:mt-0 text-center md:text-left order-2 md-order-1">
           <HeroDetails />
-        </div>
+      </div>
+      <div className="order-1 md:order-2">
+        <HeroImg />
+      </div>
+      
       </motion.div>
 
       {/* Social */}
